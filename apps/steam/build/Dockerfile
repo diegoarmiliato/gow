@@ -78,10 +78,6 @@ RUN wget https://github.com/SteamGridDB/SGDBoop/releases/latest/download/sgdboop
     chmod +x /applications/sgdboop-linux64/install.sh && \
     /applications/sgdboop-linux64/install.sh && wait
 
-RUN wget -O /applications/DeckyInstaller.sh \
-    https://github.com/SteamDeckHomebrew/decky-installer/releases/download/v1.9.0/user_install_script.sh && \
-    chmod +x /applications/DeckyInstaller.sh
-
 # Set environment variables for the desired locale
 ENV LANG=pt_BR.UTF-8
 ENV LANGUAGE=pt_BR:pt

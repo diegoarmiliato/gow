@@ -13,4 +13,10 @@ echo "*** NetworkManager started ***"
 steamos-dbus-watchdog.sh &
 echo "*** D-Bus Watchdog started ***"
 
+# Run Decky Loader's Plugin Loader, if exists
+if [ -f /home/retro/homebrew/services/PluginLoader ]; then
+    /home/retro/homebrew/services/PluginLoader &
+    echo "*** Decky Loader Plugin Loader started ***"
+fi
+
 disown
